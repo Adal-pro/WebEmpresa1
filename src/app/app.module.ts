@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-//import {HttpClient} from "@angular/common/http";
+import {HttpClientModule} from "@angular/common/http";
 //Rutas
 
 import {app_routing} from "./app.routes";
@@ -33,7 +33,7 @@ import { InformacionComponent } from './components/Producto/informacion.componen
     BrowserModule,
     AppRoutingModule,
     app_routing,
-   // HttpClient
+    HttpClientModule
   ],
   providers: [
     InformacionpersService
